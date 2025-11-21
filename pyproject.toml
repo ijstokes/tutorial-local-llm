@@ -1,0 +1,29 @@
+[project]
+name = "tutorial-ollama-hf-local-llm"
+version = "0.1.0"
+description = "Jupyter Notebook tutorial content for running local LLMs using Ollama and the HuggingFace ecosystem"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "deepeval==3.7.*",
+    "evidently==0.7.*",
+    "huggingface-hub==0.36.*",
+    "jupyter==1.1.*",
+    "jupyter-ai==2.31.*",
+    "jupyterlab==4.5.*",
+    "langchain-anthropic>=0.3.22",
+    "langchain-google-genai>=2.1.12",
+    "langchain-huggingface>=0.3.1",
+    "langchain-mistralai>=0.2.12",
+    "langchain-ollama>=0.3.10",
+    "langchain-openai>=0.3.35",
+    "langchain-perplexity>=0.1.2",
+    "lm-eval==0.4.*",
+    "matplotlib==3.10.*",
+    "numpy==2.2.*",
+    "ollama==0.6.*",
+    "openai>=1.109.1",
+    "pandas==2.3.*",
+    "torch==2.6.*",
+    "xgrammar==0.1.20",
+]
