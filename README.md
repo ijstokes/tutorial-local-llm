@@ -24,17 +24,19 @@ Are we in a one-size-fits-all world of LLMs, and destined to burn tokens forever
 6. Create an account on HuggingFace if you don't already have one: https://huggingface.co/
 7. Download four LLMs:
 
-> `ollama pull gemma3:270m` 
-> `ollama pull gemma2:2b`
-> `ollama pull tinyllama:1.1b` 
-> `ollama pull qwen3:4b` 
+```
+ollama pull gemma3:270m 
+ollama pull gemma2:2b
+ollama pull tinyllama:1.1b
+ollama pull qwen3:4b
+```
 
 You can read more about these LLMs on their HuggingFace model card, or from the paper/blog post announcing their release:
 
-* Google Gemma 3:270m (290MB) [HF](https://huggingface.co/google/gemma-3-270m) [Google Blog](https://developers.googleblog.com/en/introducing-gemma-3-270m/)
-*  Google Gemma 2:2B LLM (1.6GB) [HF](https://huggingface.co/google/gemma-2-2b) [Google Blog](https://developers.googleblog.com/en/gemma-explained-new-in-gemma-2/)
-* Tiny Llama 1.1B LLM (637MB) [HF](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) [Paper](https://arxiv.org/abs/2401.02385)
-* Qwen 3 4B LLM (2.5GB) [Qwen Blog](https://qwen.ai/blog?id=qwen3)
+* Google Gemma 3:270m (290MB) [HF](https://huggingface.co/google/gemma-3-270m) - [Google Blog](https://developers.googleblog.com/en/introducing-gemma-3-270m/)
+*  Google Gemma 2:2B LLM (1.6GB) [HF](https://huggingface.co/google/gemma-2-2b) - [Google Blog](https://developers.googleblog.com/en/gemma-explained-new-in-gemma-2/)
+* Tiny Llama 1.1B LLM (637MB) [HF](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) - [Paper](https://arxiv.org/abs/2401.02385)
+* Qwen 3 4B LLM (2.5GB) [HF](https://huggingface.co/Qwen/Qwen3-4B) - [Qwen Blog](https://qwen.ai/blog?id=qwen3)
 
 8. Clone the repository:
 
@@ -79,10 +81,53 @@ gemma2:2b                     	gemma2	2.6B	  1629 MB	Q4_0	gguf
 gemma3:270m                   	gemma3	268.10M	   291 MB	Q8_0	gguf
 glm-4.6:cloud                 	glm4	355B	     0 MB	FP8
 mistral:7b                    	llama	7.2B	  4372 MB	Q4_K_M	gguf
-qwen:latest                   	qwen2	4B	  2330 MB	Q4_0	gguf
-qwen3:4b                      	qwen3	4.0B	  2497 MB	Q4_K_M	gguf
-tinyllama:1.1b                	llama	1B	   637 MB	Q4_0	gguf
+qwen:latest                   	qwen2	4B10. Run the smoke test:
+
+
+```bash
+python smoketest.py
 ```
+
+You should get output which looks something like this:
+
+```
+huggingface_hub: 0.36.0
+deepeval:        3.7.2
+evidently:       0.7.16
+
+
+Ollama models (local):
+
+gemma3:270m                     gemma3  268.10M    291 MB   Q8_0    gguf
+gemma2:2b                       gemma2  2.6B      1629 MB   Q4_0    gguf
+tinyllama:1.1b                  llama   1B         637 MB   Q4_0    gguf
+qwen3:4b                        qwen3   4.0B      2497 MB   Q4_K_M  gguf
+```
+
+## AGENDA
+
+1. Welcome, concept overview and target tutorial outcomes (5 minutes)
+2. Local environment setup (5 minutes, with background package downloading)
+3. Why would you want to run you LLMs locally? Is it even possible? How do AI Appliances fit in? (10 minutes)
+4. Navigating HuggingFace and finding the LLM of your dreams (5 minutes + 10 minute exercise)
+5. Using Ollama from the GUI and from the CLI (5 minutes + 10 minute exercise)
+6. Using the Ollama Python library and leveraging it from code (5 minutes + 10 minute exercise)
+7. Offloading LLM to an AI Appliance (5 minutes + 5 minute exercise)
+8. Next steps for AI Autonomy, Data Sovereignty, and Advanced Analytics in the age of GenAI and LLMs (5 minutes)
+9. Q&A (10 minutes)
+
+## FURTHER DETAILS
+
+This tutorial will get you comfortable navigating the HuggingFace model
+repository, and using the Ollama ecosystem for local model management and
+hosting.  You'll learn how together these are the GitHub and Git of the LLM
+world.  While we may not be able to get those LLMs behaving in a repeatable,
+deterministic way at least you'll have the tools to choose exactly which LLMs
+you're using and an ability to retain data sovereignty by self-hosting LLMs as
+part of your overall workflow.  You'll leave with an expanded set of options
+for leveraging LLMs that are running off your laptop, off your own cloud
+server, or on affordable AI Appliances such as an Nvidia DGX Spark or Nvidia
+Jetson Orin Nano Super.
 
 ---
 
