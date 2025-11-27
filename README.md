@@ -6,7 +6,7 @@
 [![Commit activity](https://img.shields.io/github/commit-activity/m/ijstokes/tutorial-local-llm)](https://img.shields.io/github/commit-activity/m/ijstokes/tutorial-local-llm)
 [![License](https://img.shields.io/github/license/ijstokes/tutorial-local-llm)](https://img.shields.io/github/license/ijstokes/tutorial-local-llm)
 
-Tutorial on the use of Ollama to manage and serve local LLMs
+Tutorial on the use of Ollama to manage and serve local LLMs, leveraging the Ollama & Hugging Face model repositories.
 
 - **Github repository**: <https://github.com/ijstokes/tutorial-local-llm/>
 
@@ -51,6 +51,7 @@ Conda/mamba:
 
 ```bash
 mamba env create -f environment.yml
+mamba activate tutorial-local-llm
 ```
 
 UV:
@@ -62,7 +63,6 @@ source .venv/bin/activate
 
 10. Run the smoke test:
 
-
 ```bash
 python smoketest.py
 ```
@@ -70,31 +70,12 @@ python smoketest.py
 You should get output which looks something like this:
 
 ```
+Python interpreter: /path/to/tutorial-local-llm/bin/python
+Python version:     3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:34:53) [Clang 19.1.7 ]
+
 huggingface_hub: 0.36.0
 deepeval:        3.7.2
 evidently:       0.7.16
-
-
-Ollama models (local):
-
-gemma2:2b                     	gemma2	2.6B	  1629 MB	Q4_0	gguf
-gemma3:270m                   	gemma3	268.10M	   291 MB	Q8_0	gguf
-glm-4.6:cloud                 	glm4	355B	     0 MB	FP8
-mistral:7b                    	llama	7.2B	  4372 MB	Q4_K_M	gguf
-qwen:latest                   	qwen2	4B10. Run the smoke test:
-
-
-```bash
-python smoketest.py
-```
-
-You should get output which looks something like this:
-
-```
-huggingface_hub: 0.36.0
-deepeval:        3.7.2
-evidently:       0.7.16
-
 
 Ollama models (local):
 
@@ -103,6 +84,8 @@ gemma2:2b                       gemma2  2.6B      1629 MB   Q4_0    gguf
 tinyllama:1.1b                  llama   1B         637 MB   Q4_0    gguf
 qwen3:4b                        qwen3   4.0B      2497 MB   Q4_K_M  gguf
 ```
+
+If you're able to complete these steps you're ready for the Tutorial.
 
 ## AGENDA
 

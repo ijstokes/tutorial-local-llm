@@ -1,6 +1,13 @@
 '''
 Smoke test script to check packages are installed and models are available locally
 '''
+
+import sys
+print(f'''
+Python interpreter: {sys.executable}
+Python version:     {sys.version}
+''')
+
 import huggingface_hub as hfh
 print(f'huggingface_hub: {hfh.__version__}')
 
