@@ -34,6 +34,8 @@ This tutorial will get you up and running with basic local LLMs, and get you exp
 
 ## SETUP
 
+**NOTE:** I've been informed the Python environment setup does not work on all systems. I'm in the process of paring it back so it will work on a standard Windows 11 system with Intel or AMD processors and no GPU, with only 8GB of RAM. 
+
 1. Make sure you have a recent Python environment (3.10 or later, ideally already 3.12), and [UV](https://docs.astral.sh/uv/getting-started/installation/) or [Mamba](https://conda-forge.org/download/). You'll need to be be familiar with CLI operation (ideally Bash or similar).
 2. Create an Ollama account: https://ollama.com/
 3. Install Ollama locally on your laptop: https://ollama.com/download/ (60MB download, 120MB installed)
