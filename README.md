@@ -78,7 +78,8 @@ UV:
 
 ```bash
 uv add -r requirements.txt
-source .venv/bin/activate
+source .venv/bin/activate     # Mac
+source .venv/Scripts/activate # Windows
 ```
 
 10. Run the smoke test:

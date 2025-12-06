@@ -3,7 +3,6 @@ evidently==0.7.*
 huggingface_hub==0.36.*
 jupyter==1.1.*
 jupyterlab==4.5.*
-jupyter-ai==2.31.*
 langchain-anthropic
 langchain-google-genai
 langchain-huggingface
@@ -11,6 +10,7 @@ langchain-mistralai
 langchain-ollama
 langchain-openai
 llama-index==0.12.*
+llama-index-core==0.12.*
 llama-index-llms-ollama
 lm-eval==0.4.*
 matplotlib==3.10.*
