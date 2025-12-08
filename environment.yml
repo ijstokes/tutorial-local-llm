@@ -16,6 +16,7 @@ dependencies:
     - langchain-openai
     - llama-index=0.12.*
     - llama-index-core=0.12.*
+    - llama.cpp
     - matplotlib=3.10.*
     - nbdime=4.0.*
     - ollama=0.13.*

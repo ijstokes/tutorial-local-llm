@@ -13,6 +13,7 @@ langchain-openai
 llama-index==0.12.*
 llama-index-core==0.12.*
 llama-index-llms-ollama
+llama-cpp-python
 lm-eval==0.4.*
 matplotlib==3.10.*
 nbdime==4.0.*

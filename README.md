@@ -42,13 +42,14 @@ This tutorial will get you up and running with basic local LLMs, and get you exp
 4. Start Ollama locally on your laptop, and login with your Ollama account
 5. Check that your device has registered an API key automatically: https://ollama.com/settings/keys
 6. Create an account on HuggingFace if you don't already have one: https://huggingface.co/
-7. Download four LLMs:
+7. Download five LLMs:
 
 ```
 ollama pull gemma3:270m 
 ollama pull gemma2:2b
 ollama pull tinyllama:1.1b
 ollama pull qwen3:4b
+ollama pull llava-phi3:3.8b
 ```
 
 You can read more about these LLMs on their HuggingFace model card, or from the paper/blog post announcing their release:
@@ -57,6 +58,7 @@ You can read more about these LLMs on their HuggingFace model card, or from the 
 *  Google Gemma 2:2B LLM (1.6GB) [HF](https://huggingface.co/google/gemma-2-2b) - [Google Blog](https://developers.googleblog.com/en/gemma-explained-new-in-gemma-2/)
 * Tiny Llama 1.1B LLM (637MB) [HF](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) - [Paper](https://arxiv.org/abs/2401.02385)
 * Qwen 3 4B LLM (2.5GB) [HF](https://huggingface.co/Qwen/Qwen3-4B) - [Qwen Blog](https://qwen.ai/blog?id=qwen3)
+* Llava Phi3 LLM (2.9GB) [HF](https://huggingface.co/xtuner/llava-phi-3-mini-gguf) - [XTuner GH Repo](https://github.com/InternLM/xtuner)
 
 8. Clone the repository:
 
@@ -104,6 +106,7 @@ gemma3:270m                     gemma3  268.10M    291 MB   Q8_0    gguf
 gemma2:2b                       gemma2  2.6B      1629 MB   Q4_0    gguf
 tinyllama:1.1b                  llama   1B         637 MB   Q4_0    gguf
 qwen3:4b                        qwen3   4.0B      2497 MB   Q4_K_M  gguf
+llava-phi3:3.8b                 llama.  4B        2926 MB   Q4_K_M  gguf
 ```
 
 If you're able to complete these steps you're ready for the Tutorial.
