@@ -113,15 +113,12 @@ If you're able to complete these steps you're ready for the Tutorial.
 
 ## AGENDA
 
-1. Welcome, concept overview and target tutorial outcomes (5 minutes)
-2. Local environment setup (5 minutes, with background package downloading)
-3. Why would you want to run you LLMs locally? Is it even possible? How do AI Appliances fit in? (10 minutes)
-4. Navigating HuggingFace and finding the LLM of your dreams (5 minutes + 10 minute exercise)
-5. Using Ollama from the GUI and from the CLI (5 minutes + 10 minute exercise)
-6. Using the Ollama Python library and leveraging it from code (5 minutes + 10 minute exercise)
-7. Offloading LLM to an AI Appliance (5 minutes + 5 minute exercise)
-8. Next steps for AI Autonomy, Data Sovereignty, and Advanced Analytics in the age of GenAI and LLMs (5 minutes)
-9. Q&A (10 minutes)
+1. Local environment setup (5 minutes, with background package downloading)
+2. Why would you want to run LLMs locally? What are the economics, pros, and cons? (5 minutes)
+3. Getting started with Ollama for local LLM execution (15 minutes + 15 minutes exercise)
+4. Navigating HuggingFace and finding the LLM of your dreams (10 minutes + 10 minute exercise)
+5. Multimodal inputs & generating structured output (10 minutes + 10 minutes exercise)
+6. Q&A (5 minutes)
 
 ## FURTHER DETAILS
 
