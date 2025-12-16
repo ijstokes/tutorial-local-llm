@@ -1,5 +1,11 @@
 # Tutorial: Ollama + HuggingFace for local LLM execution
-[![Commit activity](https://img.shields.io/github/commit-activity/m/ijstokes/tutorial-local-llm)](https://img.shields.io/github/commit-activity/m/ijstokes/tutorial-local-llm)
+
+<center>
+<img src="img/ollama_and_huggingface.png">
+</center>
+
+[![Commit activity](https://img.shields.io/github/commit-activity/m/ijstokes/tutorial-local-llm)
+](https://img.shields.io/github/commit-activity/m/ijstokes/tutorial-local-llm)
 [![License](https://img.shields.io/github/license/ijstokes/tutorial-local-llm)](https://img.shields.io/github/license/ijstokes/tutorial-local-llm)
 
 Tutorial on the use of Ollama to manage and serve local LLMs, leveraging the Ollama & Hugging Face model repositories.
